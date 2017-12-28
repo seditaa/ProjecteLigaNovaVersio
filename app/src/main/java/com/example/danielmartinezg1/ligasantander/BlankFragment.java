@@ -11,15 +11,14 @@ import android.os.Bundle;
         import com.example.danielmartinezg1.ligasantander.NavigationDrawerActivity;
         import com.example.danielmartinezg1.ligasantander.R;
 
-        public class BlankFragment extends Fragment {
+public class BlankFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+            // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_blank, container, false);
 
-        // Inflate the layout for this fragment
-        final View view = inflater.inflate(R.layout.fragment_blank, container, false);
-
-        ((NavigationDrawerActivity) getActivity()).getSupportActionBar().setTitle("Partidos");
+        getActivity().setTitle("Partidos");
 
 
 
